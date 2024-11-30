@@ -35,7 +35,7 @@ cd TailwindJourney/Weserve
 
 
 ## Inspiration 💡
-Most project designs are taken from online sources such as ShaynaKit.
+<h3>Most project designs are taken from online sources such as <a href="">Shayna</a></h3>
 * All projects are adapted for practice and skill development, not for commercial use.
 
 
