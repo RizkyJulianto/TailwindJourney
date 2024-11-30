@@ -22,20 +22,20 @@ TailwindJourney is a collection of website projects designed using Tailwind CSS 
 
 ## How to clone this repository 🛠️
 
-- Clone this repository:
+1. Clone this repository:
 ```bash
   git clone https://github.com/RizkyJulianto/TailwindJourney.git
 ```
 
-- Enter the desired project directory, for example:
+2. Enter the desired project directory, for example:
 ```bash
 cd TailwindJourney/Weserve
 ```
-- Open the index.html file in your browser or use the Live Server extension in Visual Studio Code.
+3. Open the index.html file in your browser or use the Live Server extension in Visual Studio Code.
 
 
 ## Inspiration 💡
-<h3>Most project designs are taken from online sources such as <a href="">Shayna</a></h3>
-* All projects are adapted for practice and skill development, not for commercial use.
+<h3>Most project designs are taken from online sources such as <a href="https://shaynakit.com/landing">shaynakit</a></h3>
+<h2>* All projects are adapted for practice and skill development, not for commercial use.</h2>
 
 
