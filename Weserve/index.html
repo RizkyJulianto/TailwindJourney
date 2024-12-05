@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#F1F4F5] font-['Poppins'] ">
+  <body class="bg-[#F1F4F5] font-['Poppins']  ">
     <nav class="flex max-w-6xl mx-auto justify-between items-center mt-10 pb-12">
       <div class="logo">
         <img src="assets/logo-light.svg" alt="" />
@@ -51,36 +51,42 @@
       </div>
     </nav>
 
-    <section class="hero max-w-6xl mx-auto py-9">
-      <div class="flex items-center justify-between">
-        <div class="col-left flex flex-col gap-y-10">
-          <div class="small-badge w-fit flex bg-white rounded-full px-3 py-2 gap-x-2">
+    <section class="hero max-w-6xl mx-auto py-9 px-5">
+      <div class="flex flex-col gap-y-10 md:flex-row gap-x-10 items-center justify-between ">
+        <div class="col-left flex flex-col gap-y-10 md:basis-2/4">
+          <div class="small-badge w-fit flex bg-white rounded-full px-3 py-2 gap-x-2 items-center">
             <div class="icons flex items-center">
-              <i class="ph ph-globe text-xl"></i>
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.99998 3.5H8.99998C7.04998 9.34 7.04998 15.66 8.99998 21.5H7.99998" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 3.5C16.95 9.34 16.95 15.66 15 21.5" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 16.5V15.5C8.84 17.45 15.16 17.45 21 15.5V16.5" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 9.50001C8.84 7.55001 15.16 7.55001 21 9.50001" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                
             </div>
             <div class="text-badge">
-              <p class="text-base text-indigo-950 font-semibold">We host more than 120,000 websites</p>
+              <p class="text-xs lg:text-base text-indigo-950 font-semibold">We host more than 120,000 websites</p>
             </div>
           </div>
 
           <div class="information flex gap-y-2 flex-col">
             <div class="tag-line">
-              <h1 class="text-indigo-950 font-['Clash_Display'] text-[72px] leading-none">
-                Grow Online <br />
+              <h1 class="text-indigo-950 font-['Clash_Display'] text-[34px] md:text-[40px] lg:text-[66px] leading-none">
+                Grow Online <br class="hidden lg:block" />
                 Business Faster.
               </h1>
             </div>
             <div class="text-col-left">
-              <p class="text-base leading-loose text-gray-500">
-                We provide a variety of servers to grow your users <br />
+              <p class="text-sm md:text-base leading-loose text-gray-500">
+                We provide a variety of servers to grow your users <br class="hidden lg:block" />
                 acquisition much user-friendly and boosting up sales
               </p>
             </div>
           </div>
 
-          <div class="btn-hero flex gap-x-4 items-center">
-            <div class="btn-try-free">
-              <a href="" class="bg-violet-700 text-base text-white py-3 px-8 rounded-full font-semibold hover:bg-indigo-950">Try Free Trial</a>
+          <div class="btn-hero flex flex-col lg:flex-row gap-y-8 gap-x-4 items-center ">
+            <div class="btn-try-free w-full lg:w-fit">
+              <a href="" class="w-full inline-block lg:w-fit bg-violet-700 text-base text-center text-white py-3 px-8 rounded-full font-semibold hover:bg-indigo-950">Try Free Trial</a>
             </div>
             <a href="" class="flex gap-x-2 items-center text-violet-700 text-base font-semibold"
               ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,8 +116,8 @@
             >
           </div>
         </div>
-        <div class="img-hero">
-          <img src="assets/illustration-hero.png" alt="" class="h-[550px]" />
+        <div class="img-hero flex items-center">
+          <img src="assets/illustration-hero.png" alt="" class="h-[397px] lg:h-[550px] md:basis-2/4" />
         </div>
       </div>
     </section>
