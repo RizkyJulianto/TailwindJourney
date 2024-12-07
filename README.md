@@ -1,4 +1,3 @@
-
 # TailwindJourney 📚
 TailwindJourney is a collection of website projects designed using Tailwind CSS based on various designs on the internet. This repository is a documentation of my journey in learning and mastering the Tailwind CSS framework to create modern, responsive, and minimalist designs.
 
