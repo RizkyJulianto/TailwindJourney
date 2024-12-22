@@ -11,23 +11,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-
-    
-
   </head>
-  <body class="overflow-x-hidden bg-[#F1F4F5] font-['Poppins'] ">
+  <body class="overflow-x-hidden bg-[#F1F4F5] font-['Poppins']">
     <nav class="flex max-w-6xl mx-auto justify-between items-center mt-10 pb-12 px-5 relative">
       <div class="logo">
-        <img src="assets/logo-light.svg" alt="" />
+        <img src="assets/logo-light.svg" alt="" class="w-36 md:w-44" />
       </div>
       <div class="nav-links">
-        <ul class="flex flex-col lg:flex-row gap-y-5 gap-x-7 p-9 absolute -right-[240px] top-40 rounded-l-xl bg-violet-700  text-white lg:static lg:bg-transparent transition-all duration-500" id="navlinks">
-        <i class="ph ph-x-circle absolute right-0 top-0 p-2 text-4xl " onclick="hidemenu()"></i>
+      <ul class="flex flex-col lg:flex-row gap-y-5 gap-x-7 p-9 absolute  -right-[240px] top-16 md:top-40 rounded-l-xl bg-violet-700 text-white lg:static lg:bg-transparent transition-all duration-500" id="navlinks">
+          <i class="ph ph-x-circle absolute right-0 top-0 p-2 text-4xl lg:hidden" onclick="hidemenu()"></i>
           <li><a href="" class="text-base text-white lg:text-indigo-950 hover:font-semibold hover:text-violet-700">Products</a></li>
           <li><a href="" class="text-base text-white lg:text-indigo-950 hover:font-semibold hover:text-violet-700">Services</a></li>
           <li><a href="" class="text-base text-white lg:text-indigo-950 hover:font-semibold hover:text-violet-700">Pricing</a></li>
           <li><a href="" class="text-base text-white lg:text-indigo-950 hover:font-semibold hover:text-violet-700">Testimonials</a></li>
           <li><a href="" class="text-base text-white lg:text-indigo-950 hover:font-semibold hover:text-violet-700">Blog</a></li>
+          <li class="mt-3 md:hidden">
+            <a href="" class="bg-indigo-950 rounded py-3 px-5">Sign In</a>
+          </li>
         </ul>
       </div>
       <div class="btn-col-right flex gap-x-3 items-center">
@@ -49,27 +49,33 @@
             </svg>
           </a>
         </div>
-        <div class="btn-sign-in bg-indigo-950 text-white py-4 px-7 rounded-full font-semibold hover:bg-violet-700">
+        <div class="btn-sign-in bg-indigo-950 text-white py-4 px-7 rounded-full font-semibold hover:bg-violet-700 hidden md:block">
           <a href="">Sign In</a>
         </div>
         <div class="hamburger-menu">
-          <i class="ph ph-list lg:hidden text-indigo-950 text-5xl font-bold" onclick="showmenu()"></i>
+          <i class="ph ph-list lg:hidden text-indigo-950 text-3xl md:text-5xl font-bold" onclick="showmenu()"></i>
         </div>
       </div>
     </nav>
 
     <section class="hero max-w-6xl mx-auto py-9 px-5">
-      <div class="flex flex-col gap-y-10 md:flex-row gap-x-10 items-center justify-between ">
+      <div class="flex flex-col gap-y-10 md:flex-row gap-x-10 items-center justify-between">
         <div class="col-left flex flex-col gap-y-10 md:basis-2/3">
           <div class="small-badge w-fit flex bg-white rounded-full px-3 py-2 gap-x-2 items-center">
             <div class="icons flex items-center">
               <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M7.99998 3.5H8.99998C7.04998 9.34 7.04998 15.66 8.99998 21.5H7.99998" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M15 3.5C16.95 9.34 16.95 15.66 15 21.5" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3 16.5V15.5C8.84 17.45 15.16 17.45 21 15.5V16.5" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3 9.50001C8.84 7.55001 15.16 7.55001 21 9.50001" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                
+                <path
+                  d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z"
+                  stroke="#080C2E"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path d="M7.99998 3.5H8.99998C7.04998 9.34 7.04998 15.66 8.99998 21.5H7.99998" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15 3.5C16.95 9.34 16.95 15.66 15 21.5" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3 16.5V15.5C8.84 17.45 15.16 17.45 21 15.5V16.5" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3 9.50001C8.84 7.55001 15.16 7.55001 21 9.50001" stroke="#080C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </div>
             <div class="text-badge">
               <p class="text-xs lg:text-base text-indigo-950 font-semibold">We host more than 120,000 websites</p>
@@ -91,7 +97,7 @@
             </div>
           </div>
 
-          <div class="btn-hero flex flex-col lg:flex-row gap-y-8 gap-x-4 items-center ">
+          <div class="btn-hero flex flex-col lg:flex-row gap-y-8 gap-x-4 items-center">
             <div class="btn-try-free w-full lg:w-fit">
               <a href="" class="w-full inline-block lg:w-fit bg-violet-700 text-base text-center text-white py-3 px-8 rounded-full font-semibold hover:bg-indigo-950">Try Free Trial</a>
             </div>
@@ -130,7 +136,7 @@
     </section>
 
     <section class="partners max-w-6xl mx-auto py-12 px-5">
-      <div class="flex flex-wrap gap-y-7 md:flex-nowrap gap-x-6 items-center justify-center ">
+      <div class="flex flex-wrap gap-y-7 md:flex-nowrap gap-x-6 items-center justify-center">
         <div class="logo">
           <svg width="128" class="lg:w-[159px] md:w-[125px]" height="34" viewBox="0 0 142 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_375)">
@@ -528,20 +534,20 @@
     </section>
 
     <section class="benefits max-w-6xl mx-auto py-9 px-5">
-      <div class="flex flex-col gap-x-[25px] md:flex-row  lg:flex-row lg:gap-x-[30px] lg:items-center">
+      <div class="flex flex-col gap-x-[25px] md:flex-row lg:flex-row lg:gap-x-[30px] lg:items-center">
         <div class="img-hero flex md:basis-2/3 lg:basis-2/4">
           <img src="assets/illustration-features.png" alt="" class="h-[397px] md:h-[550px] mt-16 lg:h-[550px]" />
         </div>
         <div class="col-right flex flex-col py-12 gap-y-5 md:basis-2/4 lg:basis-2/4">
           <div class="title-benefits">
             <h3 class="text-indigo-950 text-3xl md:text-[46px] lg:text-[43px] font-['Clash_Display'] leading-tight">
-              We Have Very <br class="hidden lg:block"/>
+              We Have Very <br class="hidden lg:block" />
               Strong Ecosystem
             </h3>
           </div>
           <div class="description-benefits">
             <p class="text-[15px] md:text-sm text-gray-500">
-              We provide a variety of servers to grow your users <br class="hidden lg:block"/>
+              We provide a variety of servers to grow your users <br class="hidden lg:block" />
               acquisition much user-friendly and boosting up sales.
             </p>
           </div>
@@ -589,7 +595,7 @@
                   <h4 class="text-lg md:text-xl font-bold text-indigo-950">450,392</h4>
                 </div>
                 <div class="item-card-description">
-                  <p class="text-xs  text-gray-500 md:text-sm">All servers available</p>
+                  <p class="text-xs text-gray-500 md:text-sm">All servers available</p>
                 </div>
               </div>
             </div>
@@ -621,7 +627,7 @@
                   <h4 class="text-lg md:text-xl font-bold text-indigo-950">189 Mio</h4>
                 </div>
                 <div class="item-card-description">
-                  <p class="text-xs  text-gray-500 md:text-sm">Websites are running good</p>
+                  <p class="text-xs text-gray-500 md:text-sm">Websites are running good</p>
                 </div>
               </div>
             </div>
@@ -649,12 +655,12 @@
                   <h4 class="text-lg md:text-xl font-bold text-indigo-950">$880 Mio</h4>
                 </div>
                 <div class="item-card-description">
-                  <p class="text-xs  text-gray-500 md:text-sm">Company budget saved</p>
+                  <p class="text-xs text-gray-500 md:text-sm">Company budget saved</p>
                 </div>
               </div>
             </div>
 
-            <div class="cta-benefits flex flex-col items-center gap-y-8 lg:flex-row gap-x-5 mt-10 ">
+            <div class="cta-benefits flex flex-col items-center gap-y-8 lg:flex-row gap-x-5 mt-10">
               <div class="btn-explore w-full lg:w-fit">
                 <a href="" class="w-full inline-block text-center bg-violet-700 text-white font-semibold rounded-full px-10 py-4">Explore More</a>
               </div>
@@ -736,7 +742,7 @@
       <div class="title-faq text-center mb-8">
         <h3 class="text-indigo-950 text-[33px] md:text-[46px] font-['Clash_Display']">Frequently Asked Questions</h3>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-y-5  gap-x-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-y-5 gap-x-8">
         <div class="flex flex-col gap-y-5">
           <div class="flex flex-col card-faq bg-white rounded-xl p-5">
             <div class="card-faq-header flex justify-between items-center">
@@ -766,7 +772,10 @@
           <div class="flex flex-col card-faq bg-white rounded-xl p-5">
             <div class="card-faq-header flex justify-between items-center">
               <div class="card-faq-title">
-                <label for="accordion2" class="text-base lg:text-xl font-bold text-indigo-950 cursor-pointer">Do we need to pay 6 months  <br class="hidden md:block lg:hidden">  per item? </label>
+                <label for="accordion2" class="text-base lg:text-xl font-bold text-indigo-950 cursor-pointer"
+                  >Do we need to pay 6 months <br class="hidden md:block lg:hidden" />
+                  per item?
+                </label>
               </div>
               <div class="card-faq-toggle">
                 <label for="accordion2" class="cursor-pointer">
@@ -817,7 +826,10 @@
           <div class="flex flex-col card-faq bg-white rounded-xl p-5">
             <div class="card-faq-header flex justify-between items-center">
               <div class="card-faq-title">
-                <label for="accordion4" class="text-base lg:text-xl font-bold text-indigo-950 cursor-pointer">What if data doesn’t <br class="md:hidden"> get stored? </label>
+                <label for="accordion4" class="text-base lg:text-xl font-bold text-indigo-950 cursor-pointer"
+                  >What if data doesn’t <br class="md:hidden" />
+                  get stored?
+                </label>
               </div>
               <div class="card-faq-toggle">
                 <label for="accordion4" class="cursor-pointer">
@@ -891,7 +903,8 @@
                     <path d="M15.6957 7.25H15.7047" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M12.8954 7.25H12.9044" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
-                  Send e-mail to us <br class="md:hidden"> for other questions</a
+                  Send e-mail to us <br class="md:hidden" />
+                  for other questions</a
                 >
               </div>
               <div class="card-faq-toggle">
@@ -1179,17 +1192,15 @@
 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script>
-      const navigation = document.getElementById('navlinks');
-      
-      function showmenu() {
-        navigation.style.right = '0';
-      } 
+      const navigation = document.getElementById("navlinks");
 
-      function hidemenu() {
-        navigation.style.right = '-240px';
+      function showmenu() {
+        navigation.style.right = "0";
       }
 
-      
+      function hidemenu() {
+        navigation.style.right = "-240px";
+      }
     </script>
   </body>
 </html>
