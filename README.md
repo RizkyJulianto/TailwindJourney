@@ -1,5 +1,5 @@
 # TailwindJourney 📚
-TailwindJourney is a collection of website projects designed using Tailwind CSS based on various designs on the internet. This repository is a documentation of my journey in learning and mastering the Tailwind CSS framework to create modern, responsive, and minimalist designs.
+TailwindJourney is a collection of website projects designed using Tailwind CSS based on various existing designs. This repository is a documentation of my journey in learning and mastering the Tailwind CSS framework to create modern, responsive, and minimalist designs.
 
 
 
@@ -35,8 +35,7 @@ cd TailwindJourney/Weserve
 3. Open the index.html file in your browser or use the Live Server extension in Visual Studio Code.
 
 
-## Inspiration 💡
-<h3>Most project designs are taken from online sources such as <a href="https://shaynakit.com/landing">shaynakit</a></h3>
+## Important Notice ‼️
 <h2>* All projects are adapted for practice and skill development, not for commercial use.</h2>
 
 
