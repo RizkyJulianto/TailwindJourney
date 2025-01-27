@@ -7,6 +7,7 @@ TailwindJourney is a collection of website projects designed using Tailwind CSS 
 
  - Weserve : Hosting provider website
  - CoffeShop : Landing page for coffeshop named Kopi Merpati
+   
  
 
 ## Technology Used 🚀
