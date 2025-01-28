@@ -9,51 +9,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- Secondary Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
     <title>KopiMerpati</title>
   </head>
-  <body class="font-['Poppins'] min-h-[5000px]">
-    <header class="relative h-screen w-full">
-        <!-- Container untuk gambar dan efek hitam -->
-        <div class="absolute inset-0 bg-[url(../assets/main-bg.jpg)] bg-no-repeat bg-cover">
-          <div class="absolute inset-0 bg-black opacity-50"></div>
+  <body class="font-primary min-h-[5000px]">
+    <header class=" h-screen w-full bg-[url(../assets/header-bg.png)] bg-no-repeat bg-cover bg-bottom">
+      <!-- Navigasi -->
+      <nav class="navigation relative z-10 flex justify-between px-20 py-5 items-center">
+        <div class="navigation-logo flex items-center gap-x-2">
+          <i class="ph ph-coffee text-3xl text-white"></i>
+          <h3 class="text-white font-bold italic text-3xl">Kopi<span class="text-brown">Merpati</span></h3>
         </div>
-      
-        <!-- Navigasi -->
-        <nav class="navigation relative z-10 flex justify-between px-9 py-5 items-center ">
-          <div class="navigation-logo flex items-center gap-x-2">
-            <i class="ph ph-coffee text-3xl text-white"></i>
-            <h3 class="text-white font-bold italic text-3xl">Kopi<span class="text-[#F0A04B]">Merpati</span></h3>
-          </div>
-          <div class="navigation-right-col flex gap-x-3">
-            <ul class="navigation-links flex gap-x-3 text-white font-semibold">
-              <li><a href="" class="hover:text-[#F0A04B] transition-all duration-300">Beranda</a></li>
-              <li><a href="" class="hover:text-[#F0A04B] transition-all duration-300">Tentang</a></li>
-              <li><a href="" class="hover:text-[#F0A04B] transition-all duration-300">Menu</a></li>
-              <li><a href="" class="hover:text-[#F0A04B] transition-all duration-300">Kontak</a></li>
-            </ul>
-            <div class="navigation-right-btn">
-              <a href="" class="rounded-full text-white font-semibold bg-[#F0A04B] py-2 px-6">Order Now</a>
-            </div>
-          </div>
-        </nav>
-      
-        <!-- Konten Header -->
-        <div class="header-content relative z-10 px-9 w-full mt-36 h-full">
-          <div class="header-box-text text-center text-white">
-            <div class="header-text-title">
-              <h2 class="font-bold text-5xl">Nikmati Hangatnya <br> Kebersamaan Kopi Merpati</h2>
-            </div>
-            <div class="header-text-subtitle mt-4">
-              <p class="text-lg">Kami menyajikan kopi berkualitas dari biji kopi pilihan <br> dibuat dengan cinta untuk menemani setiap langkah harimu.</p>
-            </div>
-            <div class="header-cta mt-6">
-              <a href="" class="bg-[#F0A04B] duration-300 text-white py-3 px-6 rounded-full font-semibold">Lihat Menu</a>
-            </div>
+        <div class="navigation-right-col flex gap-x-3">
+          <ul class="navigation-links flex gap-x-3 text-white font-semibold">
+            <li><a href="" class="hover:text-brown transition-all duration-300">Beranda</a></li>
+            <li><a href="#tentang" class="hover:text-brown transition-all duration-300">Tentang</a></li>
+            <li><a href="" class="hover:text-brown transition-all duration-300">Menu</a></li>
+            <li><a href="" class="hover:text-brown transition-all duration-300">Kontak</a></li>
+          </ul>
+          <div class="navigation-right-btn">
+            <a href="" class="rounded-full text-white font-semibold bg-[#F0A04B] py-2 px-6">Order Now</a>
           </div>
         </div>
-      
-       
-      </header>
+      </nav>
+
+      <!-- Konten Header -->
+      <div class="header-content relative z-10 px-9 w-full mt-36 h-full">
+        <div class="header-box-text text-center text-white">
+          <div class="header-text-title">
+            <h2 class="font-bold text-5xl">
+              Nikmati Hangatnya <br />
+              Kebersamaan Kopi Merpati
+            </h2>
+          </div>
+          <div class="header-text-subtitle mt-4">
+            <p class="text-lg font-light">
+              Kopi Merpati menghadirkan aroma dan rasa kopi khas Nusantara yang otentik. <br />
+              Kami percaya bahwa kopi terbaik berasal dari alam dan diracik dengan hati.
+            </p>
+          </div>
+          <div class="header-cta mt-6">
+            <a href="" class="bg-brown duration-300 text-white py-3 px-6 rounded-full font-semibold">Lihat Menu</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about w-full mx-auto px-20 flex justify-between items-center gap-x-10   py-3" id="tentang">
+      <div class="about-left-col basis-[60%] text-center">
+        <div class="about-tiny-title">
+          <h3 class="font-secondary text-4xl ">Who We Are</h3>
+        </div>
+        <div class="about-title">
+          <h2 class="text-5xl font-semibold">Tentang <span class="text-brown">Kami</span></h2>
+        </div>
+        <div class="about-description text-justify py-7">
+          <p class="">Kopi Merpati hadir sebagai simbol kehangatan dan kebersamaan, menghadirkan cita rasa autentik dari biji kopi pilihan yang dipetik langsung dari kebun-kebun terbaik di Indonesia. Dengan proses roasting yang teliti dan teknik penyeduhan yang presisi, kami memastikan setiap cangkir kopi yang kami sajikan memiliki aroma yang khas dan rasa yang menggugah selera. <br> <br>
+
+            Kami percaya bahwa kopi bukan sekadar minuman, tetapi juga pengalaman. Setiap tegukan membawa kisah perjalanan panjang dari petani hingga ke tangan Anda. Dengan suasana yang nyaman dan pelayanan yang ramah, kami ingin menciptakan tempat di mana setiap orang bisa menikmati momen berharga bersama secangkir kopi terbaik. 
+            
+            Dari racikan klasik hingga inovasi terbaru, Kopi Merpati menghadirkan berbagai varian kopi yang sesuai dengan berbagai selera, mulai dari espresso yang kuat, cappuccino yang creamy, hingga kopi susu dengan sentuhan manis yang lembut. Kami menggunakan bahan-bahan alami dan proses yang berkelanjutan, karena kami percaya bahwa kopi terbaik berasal dari perhatian terhadap detail dan cinta terhadap keaslian rasa.</p>
+        </div>
+      </div>
+
+      <div class="about-right-col flex flex-col gap-y-6">
+        <div class="about-img-first">
+          <img src="../assets/1.jpg" alt="" class="w-[500px] h-80 rounded-md drop-shadow-lg">
+        </div>
+        <div class="about-img-second">
+          <img src="../assets/2.jpg" alt="" class="w-[500px] h-80 rounded-md drop-shadow-lg">
+        </div>
+      </div>
+     
+    </section>
+    <!-- About Section End-->
 
     <!-- Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>

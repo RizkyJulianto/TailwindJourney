@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@theme {
+    --color-brown: #F0A04B;
+    --font-primary: "Poppins", "sans-serif";
+    --font-secondary: "Great Vibes", "sans-serif";
+  }
+  
