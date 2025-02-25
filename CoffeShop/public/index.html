@@ -16,7 +16,10 @@
     <title>KopiMerpati</title>
   </head>
   <body class="font-primary min-h-[5000px]">
-    <header class=" h-screen w-full bg-[url(../assets/header-bg.png)] bg-no-repeat bg-cover bg-bottom">
+    <header class="relative h-screen w-full bg-[url(../assets/header-bg.jpg)] bg-no-repeat bg-cover bg-bottom backdrop-brightness-50">
+      <!-- Overlay Hitam Transparan -->
+      <div class="absolute inset-0 w-full h-full bg-black opacity-50"></div>
+
       <!-- Navigasi -->
       <nav class="navigation relative z-10 flex justify-between px-20 py-5 items-center">
         <div class="navigation-logo flex items-center gap-x-2">
@@ -26,7 +29,7 @@
         <div class="navigation-right-col flex gap-x-3">
           <ul class="navigation-links flex gap-x-3 text-white font-semibold">
             <li><a href="#beranda" class="hover:text-brown transition-all duration-300">Beranda</a></li>
-            <li><a href="#tentang" class="hover:text-brown transition-all duration-300">Tentang</a></li>
+            <li><a href="#keistimewaan" class="hover:text-brown transition-all duration-300">Keistimewaan</a></li>
             <li><a href="#menu" class="hover:text-brown transition-all duration-300">Menu</a></li>
             <li><a href="#kontak" class="hover:text-brown transition-all duration-300">Kontak</a></li>
           </ul>
@@ -37,7 +40,7 @@
       </nav>
 
       <!-- Konten Header -->
-      <div class="header-content relative z-10 px-9 w-full mt-36 h-full">
+      <div class="header-content relative z-10 px-9 w-full mt-28 h-full">
         <div class="header-box-text text-center text-white">
           <div class="header-text-title">
             <h2 class="font-bold text-5xl">
@@ -56,259 +59,109 @@
           </div>
         </div>
       </div>
+
+      <!-- Gradient White -->
     </header>
 
     <!-- About Section -->
-    <section class="relative about w-full mx-auto px-20 flex justify-between items-center gap-x-10 py-3 " id="tentang">
-      <div class="about-left-col basis-[60%] text-center">
-        <div class="about-tiny-title">
-          <h3 class="font-secondary text-4xl ">Who We Are</h3>
-        </div>
-        <div class="about-title">
-          <h2 class="text-5xl font-semibold">Tentang <span class="text-brown">Kami</span></h2>
-        </div>
-        <div class="about-description text-justify py-7">
-          <p class="">Kopi Merpati hadir sebagai simbol kehangatan dan kebersamaan, menghadirkan cita rasa autentik dari biji kopi pilihan yang dipetik langsung dari kebun-kebun terbaik di Indonesia. Dengan proses roasting yang teliti dan teknik penyeduhan yang presisi, kami memastikan setiap cangkir kopi yang kami sajikan memiliki aroma yang khas dan rasa yang menggugah selera. <br> <br>
+    <section class="signature w-full px-20 py-12" id="keistimewaan">
+      <div class="signature-heading text-center">
+        <h3 class="font-secondary text-brown text-3xl">Discover the Merpati Experience</h3>
+        <h2 class="text-4xl font-bold mt-3 text-darkbrown drop-shadow-md">Kenali Keistimewaan Kopi Merpati</h2>
 
-            Kami percaya bahwa kopi bukan sekadar minuman, tetapi juga pengalaman. Setiap tegukan membawa kisah perjalanan panjang dari petani hingga ke tangan Anda. Dengan suasana yang nyaman dan pelayanan yang ramah, kami ingin menciptakan tempat di mana setiap orang bisa menikmati momen berharga bersama secangkir kopi terbaik. 
-            
-            Dari racikan klasik hingga inovasi terbaru, Kopi Merpati menghadirkan berbagai varian kopi yang sesuai dengan berbagai selera, mulai dari espresso yang kuat, cappuccino yang creamy, hingga kopi susu dengan sentuhan manis yang lembut. Kami menggunakan bahan-bahan alami dan proses yang berkelanjutan, karena kami percaya bahwa kopi terbaik berasal dari perhatian terhadap detail dan cinta terhadap keaslian rasa.</p>
-        </div>
+        <!-- Underline -->
+        <div class="h-[2px] bg-brown w-40 mx-auto mt-5"></div>
       </div>
 
-      <div class="about-right-col flex flex-col gap-y-6">
-        <div class="about-img-first">
-          <img src="../assets/1.jpg" alt="" class="w-[500px] h-80 rounded-md drop-shadow-lg">
+      <div class="relative signature-content-container mt-20 flex gap-x-5 justify-between">
+        <div class="signature-content-col flex flex-col gap-y-10">
+          <div class="signature-content flex gap-x-5 items-center">
+           <div class="signature-content-text text-right  max-w-xs">
+            <div class="signature-content-title">
+              <h3 class="text-xl font-bold text-darkbrown">Biji Kopi Berkualitas</h3>
+            </div>
+            <div class="signature-content-description mt-2">
+              <p class="font-light text-lg">Kami hanya menggunakan biji kopi pilihan dari petani lokal dengan proses sangrai terbaik.</p>
+            </div>
+           </div>
+           <div class="signature-content-icon">
+            <img src="../assets/coffee-bean.svg" alt="" class="w-h-12 h-12">
+          </div>
+          </div>
+          <div class="signature-content flex gap-x-5 items-center">
+           <div class="signature-content-text text-right  max-w-xs">
+            <div class="signature-content-title">
+              <h3 class="text-xl font-bold text-darkbrown">Rasa Autentik</h3>
+            </div>
+            <div class="signature-content-description mt-2">
+              <p class="font-light text-lg">Setiap cangkir diracik oleh barista berpengalaman untuk  rasa yang sempurna.</p>
+            </div>
+           </div>
+           <div class="signature-content-icon">
+            <img src="../assets/coffee-cup.svg" alt="" class="w-h-12 h-12 ">
+          </div>
+          </div>
+          <div class="signature-content flex gap-x-5 items-center">
+           <div class="signature-content-text text-right  max-w-xs">
+            <div class="signature-content-title">
+              <h3 class="text-xl font-bold text-darkbrown">Suasana Nyaman</h3>
+            </div>
+            <div class="signature-content-description mt-2">
+              <p class="font-light text-lg">Desain tempat yang cozy, ideal untuk bekerja, bersantai, atau mengobrol dengan teman.</p>
+            </div>
+           </div>
+           <div class="signature-content-icon">
+            <img src="../assets/house.svg" alt="" class="w-h-12 h-12">
+          </div>
+          </div>
         </div>
-        <div class="about-img-second">
-          <img src="../assets/2.jpg" alt="" class="w-[500px] h-80 rounded-md drop-shadow-lg">
+        <div class="signature-content-col left-[25%] -top-[15%] absolute">
+          <img src="../assets/coffe.png" alt="" class="h-[600px] drop-shadow-xl">
+        </div>
+        <div class="signature-content-col flex flex-col gap-y-10">
+          <div class="signature-content flex gap-x-5 items-center flex-row-reverse">
+           <div class="signature-content-text  max-w-xs">
+            <div class="signature-content-title">
+              <h3 class="text-xl font-bold text-darkbrown">Internet & Colokan Gratis</h3>
+            </div>
+            <div class="signature-content-description mt-2">
+              <p class="font-light text-lg">Bekerja atau belajar lebih nyaman dengan internet cepat dan akses daya tanpa batas.</p>
+            </div>
+           </div>
+           <div class="signature-content-icon">
+            <img src="../assets/wifi.svg" alt="" class="w-h-12 h-12">
+          </div>
+          </div>
+          <div class="signature-content flex gap-x-5 items-center flex-row-reverse">
+           <div class="signature-content-text  max-w-xs">
+            <div class="signature-content-title">
+              <h3 class="text-xl font-bold text-darkbrown">Pesan & Ambil Cepat</h3>
+            </div>
+            <div class="signature-content-description mt-2">
+              <p class="font-light text-lg">Nikmati layanan take-away tanpa antri panjang, cukup pesan dan ambil kopimu!</p>
+            </div>
+           </div>
+           <div class="signature-content-icon">
+            <img src="../assets/clock.svg" alt="" class="w-h-12 h-12">
+          </div>
+          </div>
+          <div class="signature-content flex gap-x-5 items-center flex-row-reverse">
+           <div class="signature-content-text  max-w-xs">
+            <div class="signature-content-title">
+              <h3 class="text-xl font-bold text-darkbrown">Ramah Lingkungan</h3>
+            </div>
+            <div class="signature-content-description mt-2">
+              <p class="font-light text-lg">Kami menggunakan kemasan ramah lingkungan untuk mendukung bumi yang lebih sehat.</p>
+            </div>
+           </div>
+           <div class="signature-content-icon">
+            <img src="../assets/leaf.svg" alt="" class="w-h-12 h-12">
+          </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- About Section End-->
-
-    <!-- Menu Section -->
-    <section class="menu w-full mx-auto px-20 bg-[url(../assets/menu-bg.png)] bg-no-repeat bg-cover bg-right py-40 mt-10" id="menu">
-      <div class="menu-tiny-title">
-        <h3 class="text-center text-white text-3xl font-secondary">Flavors to Savor</h3>
-      </div>
-      <div class="menu-title">
-        <h2 class="text-center text-white font-semibold text-5xl">Menu <span class="text-brown">Kami</span></h2>
-      </div>
-      <div class="menu-content mx-auto w-full flex gap-x-12 gap-y-12 mt-10 justify-center flex-wrap">
-        <div class="menu-card flex flex-col  items-center">
-          <div class="menu-img ">
-            <img src="../assets/menu/menu-3.png" alt="" class="w-80 h-[320px] object-contain">
-          </div>
-          <div class="menu-name">
-            <h3 class="text-white font-semibold text-3xl">Midnight Brew</h3>
-          </div>
-          <div class="menu-subname">
-            <p class="text-brown text-sm">Signature Dark <span class="font-bold">Coffe</span></p>
-          </div>
-          <div class="line w-full bg-gray-100 opacity-30 h-[1px] mt-2"></div>
-          <div class="menu-composition">
-            <ul class="flex gap-x-4 text-sm py-3 text-white">
-              <li>Espresso</li>
-              <li>Dark Chocolate</li>
-              <li>Fresh Milk</li>
-            </ul>
-          </div>
-          <div class="menu-btn-order">
-            <a href="" class="mt-1 inline-block text-white bg-brown px-4 py-2 font-semibold">Pesan Sekarang</a>
-          </div>
-        </div>
-        <div class="menu-card flex flex-col  items-center">
-          <div class="menu-img ">
-            <img src="../assets/menu/menu-2.png" alt="" class="w-80 h-[320px] object-contain object-center">
-          </div>
-          <div class="menu-name">
-            <h3 class="text-white font-semibold text-3xl">Caramel Bliss</h3>
-          </div>
-          <div class="menu-subname">
-            <p class="text-brown text-sm">Sweet & Creamy <span class="font-bold">Delight</span></p>
-          </div>
-          <div class="line w-full bg-gray-100 opacity-30 h-[1px] mt-2"></div>
-          <div class="menu-composition">
-            <ul class="flex gap-x-4 text-sm py-3 text-white">
-              <li>Espresso</li>
-              <li>Caramel Syrup</li>
-              <li>Steamed Milk</li>
-            </ul>
-          </div>
-          <div class="menu-btn-order">
-            <a href="" class="mt-1 inline-block text-white bg-brown px-4 py-2 font-semibold">Pesan Sekarang</a>
-          </div>
-        </div>
-        <div class="menu-card flex flex-col items-center">
-          <div class="menu-img ">
-            <img src="../assets/menu/menu-1.png" alt="" class="w-80">
-          </div>
-          <div class="menu-name">
-            <h3 class="text-white font-semibold text-3xl">Artic Espresso</h3>
-          </div>
-          <div class="menu-subname">
-            <p class="text-brown text-sm">Chilled & <span class="font-bold">Bold</span></p>
-          </div>
-          <div class="line w-full bg-gray-100 opacity-30 h-[1px] mt-2"></div>
-          <div class="menu-composition">
-            <ul class="flex gap-x-4 text-sm py-3 text-white">
-              <li>Espresso</li>
-              <li>Ice Cubes</li>
-              <li>Simple Syrup</li>
-            </ul>
-          </div>
-          <div class="menu-btn-order">
-            <a href="" class="mt-1 inline-block text-white bg-brown px-4 py-2 font-semibold">Pesan Sekarang</a>
-          </div>
-        </div>
-        <div class="menu-card flex flex-col items-center ">
-          <div class="menu-img ">
-            <img src="../assets/menu/menu-5.png" alt="" class="w-80 h-[320px]">
-          </div>
-          <div class="menu-name">
-            <h3 class="text-white font-semibold text-3xl">Golden Mocha</h3>
-          </div>
-          <div class="menu-subname">
-            <p class="text-brown text-sm">Rich & <span class="font-bold">Creamy Cocoa</span></p>
-          </div>
-          <div class="line w-full bg-gray-100 opacity-30 h-[1px] mt-2"></div>
-          <div class="menu-composition">
-            <ul class="flex gap-x-4 text-sm py-3 text-white">
-              <li>Espresso</li>
-              <li>Cocoa Powder</li>
-              <li>Steamed Milk</li>
-            </ul>
-          </div>
-          <div class="menu-btn-order">
-            <a href="" class="mt-1 inline-block text-white bg-brown px-4 py-2 font-semibold">Pesan Sekarang</a>
-          </div>
-        </div>
-        <div class="menu-card flex flex-col  items-center">
-          <div class="menu-img ">
-            <img src="../assets/menu/menu-4.png" alt="" class="w-80">
-          </div>
-          <div class="menu-name">
-            <h3 class="text-white font-semibold text-3xl">Hazelnut Frost</h3>
-          </div>
-          <div class="menu-subname">
-            <p class="text-brown text-sm">Nutty & <span class="font-bold">Smooth</span></p>
-          </div>
-          <div class="line w-full bg-gray-100 opacity-30 h-[1px] mt-2"></div>
-          <div class="menu-composition">
-            <ul class="flex gap-x-4 text-sm py-3 text-white">
-              <li>Espresso</li>
-              <li>Hazelnut Syrup</li>
-              <li>Ice Milk</li>
-            </ul>
-          </div>
-          <div class="menu-btn-order">
-            <a href="" class="mt-1 inline-block text-white bg-brown px-4 py-2 font-semibold">Pesan Sekarang</a>
-          </div>
-        </div>
-        <div class="menu-card flex flex-col  items-center">
-          <div class="menu-img ">
-            <img src="../assets/menu/menu-6.png" alt="" class="w-80">
-          </div>
-          <div class="menu-name">
-            <h3 class="text-white font-semibold text-3xl">Taro Frost</h3>
-          </div>
-          <div class="menu-subname">
-            <p class="text-brown text-sm">Sweet & <span class="font-bold">Creamy Taro</span></p>
-          </div>
-          <div class="line w-full bg-gray-100 opacity-30 h-[1px] mt-2"></div>
-          <div class="menu-composition">
-            <ul class="flex gap-x-4 text-sm py-3 text-white">
-              <li>Espresso</li>
-              <li>Dark Chocolate</li>
-              <li>Fresh Milk</li>
-            </ul>
-          </div>
-          <div class="menu-btn-order">
-            <a href="" class="mt-1 inline-block text-white bg-brown px-4 py-2 font-semibold">Pesan Sekarang</a>
-          </div>
-        </div>
-        
-      </div>
-     </section>
-    <!-- Menu Section End-->
-
-    <!-- Promo Section -->
-     <section class="promo w-full mx-auto px-20 bg-[url(../assets/promo-bg.jpg)] bg-no-repeat bg-cover bg-center py-12">
-      <div class="promo-tiny-title">
-        <h3 class="text-center text-white text-5xl font-secondary">Specials Offer</h3>
-      </div>
-      <div class="promo-title">
-        <h2 class="text-center text-white font-semibold text-4xl">Buy 2 Get Free untuk semua Minuman</h2>
-      </div>
-      <div class="promo-container-card mx-auto w-full flex gap-x-5  mt-10 justify-center flex-wrap">
-        <div class="promo-card bg-white/10 backdrop-blur-xs rounded-2xl flex flex-col items-center p-3 gap-y-3">
-          <div class="promo-card-img">
-            <img src="../assets/menu/menu-1.png" alt="" class="w-[200px] h-[140px] object-contain">
-          </div>
-          <div class="promo-card-label">
-            <span class="text-white">Artic Espresso</span>
-          </div>
-        </div>
-        <div class="promo-card bg-white/10 backdrop-blur-xs rounded-2xl flex flex-col items-center p-3 gap-y-3">
-          <div class="promo-card-img">
-            <img src="../assets/menu/menu-2.png" alt="" class="w-[200px] h-[140px] object-contain">
-          </div>
-          <div class="promo-card-label">
-            <span class="text-white">Caramel Bliss</span>
-          </div>
-        </div>
-        <div class="promo-card bg-white/10 backdrop-blur-xs rounded-2xl flex flex-col items-center p-3 gap-y-3">
-          <div class="promo-card-img">
-            <img src="../assets/menu/menu-3.png" alt="" class="w-[200px] h-[140px] object-contain">
-          </div>
-          <div class="promo-card-label">
-            <span class="text-white">Midnight Brew</span>
-          </div>
-        </div>
-        <div class="promo-card bg-white/10 backdrop-blur-xs rounded-2xl flex flex-col items-center p-3 gap-y-3">
-          <div class="promo-card-img">
-            <img src="../assets/menu/menu-4.png" alt="" class="w-[200px] h-[140px] object-contain">
-          </div>
-          <div class="promo-card-label">
-            <span class="text-white">Hazelnut Frost</span>
-          </div>
-        </div>
-      </div>
-      <div class="countdown-container flex gap-x-3 w-full mt-10 justify-center">
-        <div class="countdown-col bg-white px-8 py-4 flex flex-col items-center rounded-2xl">
-          <div class="countdown-number">
-            <span class="text-4xl font-bold">20</span>
-          </div>
-          <div class="countdown-label">
-            <span class="text-gray-500">Jam</span>
-          </div>
-        </div>
-        <div class="countdown-col bg-white px-8 py-4 flex flex-col items-center rounded-2xl">
-          <div class="countdown-number">
-            <span class="text-4xl font-bold">56</span>
-          </div>
-          <div class="countdown-label">
-            <span class="text-gray-500">Menit</span>
-          </div>
-        </div>
-        <div class="countdown-col bg-white px-8 py-4 flex flex-col items-center rounded-2xl">
-          <div class="countdown-number">
-            <span class="text-4xl font-bold">15</span>
-          </div>
-          <div class="countdown-label">
-            <span class="text-gray-500">Detik</span>
-          </div>
-        </div>
-      </div>
-      <div class="btn-cta flex justify-center mt-10 ">
-        <a href="" class="inline-block text-white bg-brown px-4 py-4 font-semibold">Klaim Sekarang</a>
-      </div>
-     </section>
-    <!-- Promo Section End -->
-
-
-
+    <!-- About Section End -->
 
     <!-- Icons -->
     <script type="module" src="../js/main.js"></script>
