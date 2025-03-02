@@ -21,6 +21,6 @@
 } 
 
 .nav-active {
-  @apply w-7xl transition-all duration-1000 ease-in-out bg-gray-400/20 rounded-full bg-clip-padding backdrop-filter backdrop-blur-xl border border-gray-100
+  @apply w-7xl transition-all duration-500 ease-in-out bg-gray-400/20 rounded-full bg-clip-padding backdrop-filter backdrop-blur-xl border border-gray-100
   ;
 }
