@@ -16,53 +16,53 @@
     <title>KopiMerpati</title>
   </head>
   <body class="font-primary min-h-[5000px]">
-    <header class="relative h-screen w-full bg-[url(../assets/header-bg.jpg)] bg-no-repeat bg-cover bg-bottom backdrop-brightness-50">
-      <!-- Overlay Hitam Transparan -->
-      <div class="absolute inset-0 w-full h-full bg-black opacity-50"></div>
+    <header class="header">
 
       <!-- Navigasi -->
-      <nav class="navigation relative z-20 flex justify-between px-20 py-5 items-center">
-        <div class="navigation-logo flex items-center gap-x-2">
-          <i class="ph ph-coffee text-3xl text-white"></i>
-          <h3 class="text-white font-bold italic text-3xl">Kopi<span class="text-brown">Merpati</span></h3>
-        </div>
-        <div class="navigation-right-col flex gap-x-3">
-          <ul class="navigation-links flex gap-x-3 text-white font-semibold">
-            <li><a href="#beranda" class="hover:text-brown transition-all duration-300">Beranda</a></li>
-            <li><a href="#keistimewaan" class="hover:text-brown transition-all duration-300">Keistimewaan</a></li>
-            <li><a href="#galeri" class="hover:text-brown transition-all duration-300">Galeri</a></li>
-            <li><a href="#menu" class="hover:text-brown transition-all duration-300">Menu</a></li>
-            <li><a href="#kontak" class="hover:text-brown transition-all duration-300">Kontak</a></li>
-          </ul>
-          <div class="navigation-right-btn">
-            <a href="" class="rounded-full text-white font-semibold bg-[#F0A04B] py-2 px-6 transition-all duration-300 hover:bg-darkbrown">Order Now</a>
+      <div class="navigation-container fixed w-full mx-auto z-50 top-3  rounded-full right-0 left-0 ">
+        <nav class="navigation flex justify-between px-20 py-5  items-center ">
+          <div class="navigation-logo flex items-center gap-x-2">
+            <i class="ph ph-coffee text-3xl text-white"></i>
+            <h3 class="text-white font-bold italic text-3xl">Kopi<span class="text-brown">Merpati</span></h3>
           </div>
-        </div>
-      </nav>
+          <div class="navigation-right-col flex gap-x-3">
+            <ul class="navigation-links flex gap-x-3 text-white font-semibold">
+              <li><a href="#beranda" class="hover:text-brown transition-all duration-300">Beranda</a></li>
+              <li><a href="#keistimewaan" class="hover:text-brown transition-all duration-300">Keistimewaan</a></li>
+              <li><a href="#galeri" class="hover:text-brown transition-all duration-300">Galeri</a></li>
+              <li><a href="#menu" class="hover:text-brown transition-all duration-300">Menu</a></li>
+              <li><a href="#kontak" class="hover:text-brown transition-all duration-300">Kontak</a></li>
+            </ul>
+            <div class="navigation-right-btn">
+              <a href="" class="rounded-full text-white font-semibold bg-[#F0A04B] py-2 px-6 transition-all duration-300 hover:bg-darkbrown">Order Now</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-      <!-- Konten Header -->
-      <div class="header-content relative z-10 px-9 w-full mt-28 h-full">
-        <div class="header-box-text text-center text-white">
-          <div class="header-text-title">
-            <h2 class="font-bold text-5xl">
-              Nikmati Hangatnya <br />
-              Kebersamaan Kopi Merpati
-            </h2>
-          </div>
-          <div class="header-text-subtitle mt-4">
-            <p class="text-lg font-light">
-              Kopi Merpati menghadirkan aroma dan rasa kopi khas Nusantara yang otentik. <br />
-              Kami percaya bahwa kopi terbaik berasal dari alam dan diracik dengan hati.
-            </p>
-          </div>
-          <div class="header-cta mt-6">
-            <a href="" class="bg-brown text-white py-3 px-6 rounded-full font-semibold transition-all duration-300 hover:bg-darkbrown">Lihat Menu</a>
-          </div>
+    <!-- Hero Section -->
+    <div class="hero-section-content relative z-10 px-9 py-42 h-screen w-full bg-[url(../assets/header-bg.jpg)] bg-no-repeat bg-cover bg-bottom backdrop-brightness-50">
+      <div class="hero-section-box-text text-center text-white">
+        <div class="hero-section-text-title">
+          <h2 class="font-bold text-5xl">
+            Nikmati Hangatnya <br />
+            Kebersamaan Kopi Merpati
+          </h2>
+        </div>
+        <div class="hero-section-text-subtitle mt-4">
+          <p class="text-lg font-light">
+            Kopi Merpati menghadirkan aroma dan rasa kopi khas Nusantara yang otentik. <br />
+            Kami percaya bahwa kopi terbaik berasal dari alam dan diracik dengan hati.
+          </p>
+        </div>
+        <div class="hero-section-cta mt-6">
+          <a href="" class="bg-brown text-white py-3 px-6 rounded-full font-semibold transition-all duration-300 hover:bg-darkbrown">Lihat Menu</a>
         </div>
       </div>
+    </div>
 
-      <!-- Gradient White -->
-    </header>
+    <!-- Gradient White -->
 
     <!-- Signature Section -->
     <section class="signature w-full px-20 py-12" id="keistimewaan">
@@ -204,7 +204,7 @@
       </div>
 
       <div class="relative menu-content-container mt-20 flex justify-between">
-        <div class="menu-content-col-left flex flex-col gap-y-10  basis-[45%]">
+        <div class="menu-content-col-left flex flex-col gap-y-10 basis-[45%]">
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
@@ -226,7 +226,7 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Cappuccino Classic </h3>
+                <h3 class="text-xl font-bold text-darkbrown">Cappuccino Classic</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
@@ -244,7 +244,7 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Latte Caramel Delight </h3>
+                <h3 class="text-xl font-bold text-darkbrown">Latte Caramel Delight</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
@@ -262,7 +262,7 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Velvet Cappuccino </h3>
+                <h3 class="text-xl font-bold text-darkbrown">Velvet Cappuccino</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
@@ -280,7 +280,7 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Mocha Hazelnut Bliss </h3>
+                <h3 class="text-xl font-bold text-darkbrown">Mocha Hazelnut Bliss</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
@@ -296,11 +296,11 @@
             </div>
           </div>
         </div>
-        <div class="menu-content-col-right flex flex-col gap-y-10  basis-[45%]">
+        <div class="menu-content-col-right flex flex-col gap-y-10 basis-[45%]">
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Vanilla Cold Brew </h3>
+                <h3 class="text-xl font-bold text-darkbrown">Vanilla Cold Brew</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
@@ -318,7 +318,7 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Affogato Indulgence </h3>
+                <h3 class="text-xl font-bold text-darkbrown">Affogato Indulgence</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
@@ -336,7 +336,7 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Kopi Susu Nusantara </h3>
+                <h3 class="text-xl font-bold text-darkbrown">Kopi Susu Nusantara</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
@@ -354,7 +354,7 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Matcha Latte Fusion  </h3>
+                <h3 class="text-xl font-bold text-darkbrown">Matcha Latte Fusion</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
@@ -404,52 +404,57 @@
 
       <div class="coffe-process-container flex gap-x-2">
         <div class="coffe-process-col flex flex-col gap-y-4 mt-20 max-w-sm">
-          <div class="relative coffe-process-card-text bg-brown rounded-md shadow-md py-6 px-5 flex flex-col gap-y-4 ">
+          <div class="relative coffe-process-card-text bg-brown rounded-md shadow-md py-6 px-5 flex flex-col gap-y-4">
             <div class="number absolute bg-brown rounded-full w-20 h-20 p-2 border-4 border-white text-white font-bold text-4xl -top-12 left-2 flex justify-center items-center">1</div>
             <div class="h-[2px] bg-white w-36 mt-5"></div>
             <div class="title">
               <h3 class="font-bold text-white text-xl">Seleksi & Panen Biji Kopi</h3>
             </div>
             <div class="description max-w-sm">
-              <p class="font-light text-white">Kami hanya memilih biji kopi terbaik yang sudah matang sempurna untuk menjaga kualitas rasa. Setiap biji kopi yang dipanen melalui seleksi ketat, memastikan hanya biji dengan ukuran, warna, dan tingkat kematangan yang optimal yang terpilih.</p>
+              <p class="font-light text-white">
+                Kami hanya memilih biji kopi terbaik yang sudah matang sempurna untuk menjaga kualitas rasa. Setiap biji kopi yang dipanen melalui seleksi ketat, memastikan hanya biji dengan ukuran, warna, dan tingkat kematangan yang
+                optimal yang terpilih.
+              </p>
             </div>
           </div>
-          <img src="../assets/coffe-process-1.jpg" alt="" class="cursor-pointer h-full object-cover rounded-md" /> 
+          <img src="../assets/coffe-process-1.jpg" alt="" class="cursor-pointer h-full object-cover rounded-md" />
         </div>
         <div class="coffe-process-col flex flex-col-reverse gap-y-4 mt-20 max-w-sm">
-          <div class="relative coffe-process-card-text bg-darkbrown rounded-md shadow-md py-6 px-6 flex flex-col gap-y-4 ">
+          <div class="relative coffe-process-card-text bg-darkbrown rounded-md shadow-md py-6 px-6 flex flex-col gap-y-4">
             <div class="number absolute bg-darkbrown rounded-full w-20 h-20 p-2 border-4 border-white text-white font-bold text-4xl -top-12 left-2 flex justify-center items-center">2</div>
             <div class="h-[2px] bg-white w-36 mt-5"></div>
             <div class="title">
-              <h3 class="font-bold text-white text-xl">Proses Pengolahan yang Teliti </h3>
+              <h3 class="font-bold text-white text-xl">Proses Pengolahan yang Teliti</h3>
             </div>
             <div class="description max-w-xl">
-              <p class="font-light text-white">Biji kopi yang terpilih melewati proses pencucian, pengeringan, dan penggilingan dengan standar tinggi. Setiap tahap dilakukan dengan cermat untuk mempertahankan rasa autentik dan karakter khas kopi Merpati.</p>
+              <p class="font-light text-white">
+                Biji kopi yang terpilih melewati proses pencucian, pengeringan, dan penggilingan dengan standar tinggi. Setiap tahap dilakukan dengan cermat untuk mempertahankan rasa autentik dan karakter khas kopi Merpati.
+              </p>
             </div>
           </div>
-          <img src="../assets/coffe-process-2.jpg" alt="" class="cursor-pointer h-full object-cover rounded-md" /> 
+          <img src="../assets/coffe-process-2.jpg" alt="" class="cursor-pointer h-full object-cover rounded-md" />
         </div>
         <div class="coffe-process-col flex flex-col gap-y-4 mt-20 max-w-sm">
-          <div class="relative coffe-process-card-text bg-brown rounded-md shadow-md py-6 px-5 flex flex-col gap-y-4 ">
+          <div class="relative coffe-process-card-text bg-brown rounded-md shadow-md py-6 px-5 flex flex-col gap-y-4">
             <div class="number absolute bg-brown rounded-full w-20 h-20 p-2 border-4 border-white text-white font-bold text-4xl -top-12 left-2 flex justify-center items-center">3</div>
             <div class="h-[2px] bg-white w-36 mt-5"></div>
             <div class="title">
-              <h3 class="font-bold text-white text-xl">Sangrai Sempurna & Penyajian </h3>
+              <h3 class="font-bold text-white text-xl">Sangrai Sempurna & Penyajian</h3>
             </div>
             <div class="description max-w-sm">
-              <p class="font-light text-white">Proses sangrai dilakukan dengan teknik khusus untuk mengeluarkan aroma dan cita rasa terbaik. Kopi Merpati kemudian disajikan dengan teknik penyeduhan yang pas, menghadirkan pengalaman menikmati kopi yang istimewa.</p>
+              <p class="font-light text-white">
+                Proses sangrai dilakukan dengan teknik khusus untuk mengeluarkan aroma dan cita rasa terbaik. Kopi Merpati kemudian disajikan dengan teknik penyeduhan yang pas, menghadirkan pengalaman menikmati kopi yang istimewa.
+              </p>
             </div>
           </div>
-          <img src="../assets/coffe-process-3.jpg" alt="" class="cursor-pointer h-full object-cover rounded-md" /> 
+          <img src="../assets/coffe-process-3.jpg" alt="" class="cursor-pointer h-full object-cover rounded-md" />
         </div>
       </div>
-      
-  
     </section>
     <!-- Coffe Process End -->
 
     <!-- Icons -->
-    <script type="module" src="../js/main.js"></script>
+    <script  src="../js/main.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
   </body>
 </html>
