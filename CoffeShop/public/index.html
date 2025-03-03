@@ -19,39 +19,46 @@
     <header class="header">
 
       <!-- Navigasi -->
-      <div class="navigation-container fixed w-full mx-auto z-50 top-3  rounded-full right-0 left-0 ">
-        <nav class="navigation flex justify-between px-20 py-5  items-center ">
+      <div class="navigation-container fixed lg:w-full md:w-[690px] mx-auto z-50 top-3  right-0 left-0  bg-gray-400/20 lg:bg-transparent rounded-full bg-clip-padding backdrop-filter backdrop-blur-xl lg:backdrop-blur-none max-lg:border max-lg:border-gray-100">
+        <nav class="navigation flex justify-between lg:px-20 px-14 py-5 items-center ">
           <div class="navigation-logo flex items-center gap-x-2">
             <i class="ph ph-coffee text-3xl text-white"></i>
             <h3 class="text-white font-bold italic text-3xl">Kopi<span class="text-brown">Merpati</span></h3>
           </div>
-          <div class="navigation-right-col flex gap-x-3">
-            <ul class="navigation-links flex gap-x-3 text-white font-semibold">
-              <li><a href="#beranda" class="hover:text-brown transition-all duration-300">Beranda</a></li>
-              <li><a href="#keistimewaan" class="hover:text-brown transition-all duration-300">Keistimewaan</a></li>
-              <li><a href="#galeri" class="hover:text-brown transition-all duration-300">Galeri</a></li>
-              <li><a href="#menu" class="hover:text-brown transition-all duration-300">Menu</a></li>
-              <li><a href="#kontak" class="hover:text-brown transition-all duration-300">Kontak</a></li>
+          <div class="navigation-right-col flex gap-x-3 items-center">
+            <ul class="navigation-links flex gap-x-3 gap-y-4 lg:text-white font-semibold flex-col lg:flex-row absolute lg:static bg-white lg:bg-transparent text-darkbrown p-4 lg:p-0 w-full lg:w-auto left-0 top-30 shadow-md lg:shadow-none rounded-md opacity-0 lg:opacity-100 transition-all duration-700 text-lg lg:text-base" id="navigation">
+              <li><a href="#beranda" class="hover:text-brown transition-all inline-block w-full lg:w-fit duration-300 border-b-2 border-gray-100 lg:border-none py-3">Beranda</a></li>
+              <li><a href="#keistimewaan" class="hover:text-brown transition-all inline-block w-full lg:w-fit duration-300 border-b-2 border-gray-100 lg:border-none py-3">Keistimewaan</a></li>
+              <li><a href="#galeri" class="hover:text-brown transition-all inline-block w-full lg:w-fit duration-300 border-b-2 border-gray-100 lg:border-none py-3">Galeri</a></li>
+              <li><a href="#menu" class="hover:text-brown transition-all inline-block w-full lg:w-fit duration-300 border-b-2 border-gray-100 lg:border-none py-3">Menu</a></li>
+              <li><a href="#kontak" class="hover:text-brown transition-all inline-block w-full lg:w-fit duration-300 border-b-2 border-gray-100 lg:border-none py-3">Kontak</a></li>
             </ul>
             <div class="navigation-right-btn">
               <a href="" class="rounded-full text-white font-semibold bg-[#F0A04B] py-2 px-6 transition-all duration-300 hover:bg-darkbrown">Order Now</a>
             </div>
+            <div class="button-hamburger relative flex items-center lg:hidden ml-2">
+              <button id="hamburger" name="hamburger" type="button" class="block" >
+                  <span class="hamburger-bar bg-brown block w-[30px] h-[2px] my-2 rounded-md origin-top-left transiton-all duration-500 "></span>
+                  <span class="hamburger-bar bg-brown block w-[30px] h-[2px] my-2 ml-2 rounded-md transition-all duration-500 "></span>
+                  <span class="hamburger-bar bg-brown block w-[30px] h-[2px] my-2 rounded-md origin-bottom-left transiton-all duration-500 "></span>
+              </button>
+          </div>
           </div>
         </nav>
       </div>
     </header>
 
     <!-- Hero Section -->
-    <div class="hero-section-content relative z-10 px-9 py-42 h-screen w-full bg-[url(../assets/header-bg.jpg)] bg-no-repeat bg-cover bg-bottom backdrop-brightness-50">
+    <div class="hero-section-content relative z-10 px-9 py-42  h-screen w-full bg-[url(../assets/header-bg.jpg)] bg-no-repeat bg-cover bg-bottom backdrop-brightness-50">
       <div class="hero-section-box-text text-center text-white">
         <div class="hero-section-text-title">
-          <h2 class="font-bold text-5xl">
+          <h2 class="font-bold lg:text-5xl text-4xl">
             Nikmati Hangatnya <br />
             Kebersamaan Kopi Merpati
           </h2>
         </div>
         <div class="hero-section-text-subtitle mt-4">
-          <p class="text-lg font-light">
+          <p class="lg:text-lg text-base font-light">
             Kopi Merpati menghadirkan aroma dan rasa kopi khas Nusantara yang otentik. <br />
             Kami percaya bahwa kopi terbaik berasal dari alam dan diracik dengan hati.
           </p>
@@ -165,12 +172,12 @@
     <!-- Signature Section End -->
 
     <!-- Gallery Section -->
-    <section class="gallery w-full px-20 py-12 mt-28  scroll-mt-28" id="galeri">
+    <!-- <section class="gallery w-full px-20 py-12 mt-28  scroll-mt-28" id="galeri">
       <div class="gallery-heading text-center">
         <h3 class="font-secondary text-brown text-3xl">Merpati Moments</h3>
         <h2 class="text-4xl font-bold mt-3 text-darkbrown drop-shadow-md">Menangkap rasa, berbagi kenangan.</h2>
 
-        <!-- Underline -->
+        
         <div class="h-[2px] bg-brown w-40 mx-auto mt-5"></div>
       </div>
       <div class="gallery-container flex flex-col gap-y-2">
@@ -190,7 +197,7 @@
           <img src="../assets/gallery/gallery-9.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 w-full h-80 object-cover" />
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Gallery Section End -->
 
     <!-- Menu Section -->

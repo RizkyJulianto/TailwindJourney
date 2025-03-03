@@ -20,7 +20,21 @@
   @apply bg-brown;
 } 
 
-.nav-active {
-  @apply w-7xl transition-all duration-500 ease-in-out bg-gray-400/20 rounded-full bg-clip-padding backdrop-filter backdrop-blur-xl border border-gray-100
+.nav-scroll {
+  @apply lg:w-7xl  transition-all duration-500 ease-in-out bg-gray-400/20 rounded-full bg-clip-padding backdrop-filter backdrop-blur-xl border border-gray-100
   ;
+}
+
+.nav-active {
+  @apply opacity-100 z-20;
+}
+
+.hamburger-active > span:nth-child(1){
+  @apply rotate-45;
+}
+.hamburger-active > span:nth-child(2){
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3){
+  @apply -rotate-45;
 }
