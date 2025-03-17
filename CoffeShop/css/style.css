@@ -744,9 +744,6 @@
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
-  .mt-12 {
-    margin-top: calc(var(--spacing) * 12);
-  }
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
@@ -855,12 +852,6 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
-  .h-4 {
-    height: calc(var(--spacing) * 4);
-  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -897,14 +888,8 @@
   .max-h-screen {
     max-height: 100vh;
   }
-  .min-h-\[7000px\] {
-    min-height: 7000px;
-  }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -998,9 +983,6 @@
   }
   .grow-1 {
     flex-grow: 1;
-  }
-  .basis-1 {
-    flex-basis: calc(var(--spacing) * 1);
   }
   .basis-1\/2 {
     flex-basis: calc(1/2 * 100%);
@@ -1392,9 +1374,6 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
-  .gap-x-1 {
-    column-gap: calc(var(--spacing) * 1);
-  }
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
   }
@@ -1412,9 +1391,6 @@
   }
   .gap-x-10 {
     column-gap: calc(var(--spacing) * 10);
-  }
-  .gap-x-14 {
-    column-gap: calc(var(--spacing) * 14);
   }
   .gap-x-16 {
     column-gap: calc(var(--spacing) * 16);
@@ -1696,12 +1672,6 @@
   .bg-darkbrown {
     background-color: var(--color-darkbrown);
   }
-  .bg-gray-100 {
-    background-color: var(--color-gray-100);
-  }
-  .bg-gray-400 {
-    background-color: var(--color-gray-400);
-  }
   .bg-gray-400\/20 {
     background-color: color-mix(in oklab, var(--color-gray-400) 20%, transparent);
   }
@@ -1898,9 +1868,6 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
-  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
@@ -1948,9 +1915,6 @@
   }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
-  }
-  .pb-3 {
-    padding-bottom: calc(var(--spacing) * 3);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
@@ -2731,6 +2695,11 @@
       width: 400px;
     }
   }
+  .lg\:w-\[490px\] {
+    @media (width >= 64rem) {
+      width: 490px;
+    }
+  }
   .lg\:w-auto {
     @media (width >= 64rem) {
       width: auto;
@@ -2744,6 +2713,16 @@
   .lg\:w-full {
     @media (width >= 64rem) {
       width: 100%;
+    }
+  }
+  .lg\:max-w-\[490px\] {
+    @media (width >= 64rem) {
+      max-width: 490px;
+    }
+  }
+  .lg\:max-w-md {
+    @media (width >= 64rem) {
+      max-width: var(--container-md);
     }
   }
   .lg\:max-w-sm {
