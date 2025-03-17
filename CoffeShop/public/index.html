@@ -19,16 +19,16 @@
     <header class="header">
       <!-- Navigasi -->
       <div
-        class="navigation-container fixed lg:w-full md:w-[690px] mx-auto z-50 top-3 right-0 left-0 bg-gray-400/20 lg:bg-transparent rounded-full bg-clip-padding backdrop-filter backdrop-blur-xl lg:backdrop-blur-none max-lg:border max-lg:border-gray-100"
+        class="navigation-container fixed lg:w-full md:w-[690px]  mx-auto z-50 top-3 right-0 left-0 bg-gray-400/20 lg:bg-transparent rounded-full bg-clip-padding backdrop-filter backdrop-blur-xl lg:backdrop-blur-none max-lg:border max-lg:border-gray-100"
       >
-        <nav class="navigation flex justify-between lg:px-20 px-14 py-5 items-center">
+        <nav class="navigation flex justify-between lg:px-20 md:px-10 px-8 py-5 items-center">
           <div class="navigation-logo flex items-center gap-x-2">
-            <i class="ph ph-coffee text-3xl text-white"></i>
-            <h3 class="text-white font-bold italic text-3xl">Kopi<span class="text-brown">Merpati</span></h3>
+            <i class="ph ph-coffee md:text-3xl text-2xl text-white"></i>
+            <h3 class="text-white font-bold italic md:text-3xl text-2xl">Kopi<span class="text-brown">Merpati</span></h3>
           </div>
-          <div class="navigation-right-col flex gap-x-3 items-center">
+          <div class="navigation-right-col flex gap-x-3 items-center ">
             <ul
-              class="navigation-links flex gap-x-3 gap-y-4 lg:text-white font-semibold flex-col lg:flex-row absolute lg:static bg-white lg:bg-transparent text-darkbrown p-4 lg:p-0 w-full lg:w-auto left-0 top-30 shadow-md lg:shadow-none rounded-md opacity-0 lg:opacity-100 transition-all duration-700 text-lg lg:text-base"
+              class="navigation-links flex gap-x-3 gap-y-4 lg:text-white font-semibold flex-col lg:flex-row absolute lg:static bg-white lg:bg-transparent text-darkbrown p-4 lg:p-0 w-[90%]  md:w-full lg:w-auto left-5 md:left-0 top-30 shadow-md lg:shadow-none rounded-md opacity-0 lg:opacity-100 transition-all duration-700 text-lg lg:text-base"
               id="navigation"
             >
               <li><a href="#beranda" class="hover:text-brown transition-all inline-block w-full lg:w-fit duration-300 border-b-2 border-gray-100 lg:border-none py-3">Beranda</a></li>
@@ -36,8 +36,11 @@
               <li><a href="#galeri" class="hover:text-brown transition-all inline-block w-full lg:w-fit duration-300 border-b-2 border-gray-100 lg:border-none py-3">Galeri</a></li>
               <li><a href="#menu" class="hover:text-brown transition-all inline-block w-full lg:w-fit duration-300 border-b-2 border-gray-100 lg:border-none py-3">Menu</a></li>
               <li><a href="#kontak" class="hover:text-brown transition-all inline-block w-full lg:w-fit duration-300 border-b-2 border-gray-100 lg:border-none py-3">Kontak</a></li>
+              <div class="navigation-right-btn md:hidden ">
+                <a href="" class="inline-block text-center rounded-md w-full text-white font-semibold bg-[#F0A04B] py-2 px-6 transition-all duration-300 hover:bg-darkbrown">Order Now</a>
+              </div>
             </ul>
-            <div class="navigation-right-btn">
+            <div class="navigation-right-btn md:block hidden">
               <a href="" class="rounded-full text-white font-semibold bg-[#F0A04B] py-2 px-6 transition-all duration-300 hover:bg-darkbrown">Order Now</a>
             </div>
             <div class="button-hamburger relative flex items-center lg:hidden ml-2">
@@ -53,10 +56,10 @@
     </header>
 
     <!-- Hero Section -->
-    <div class="hero-section-content relative z-10 px-9 py-42 h-screen w-full bg-[url(../assets/header-bg.jpg)] bg-no-repeat bg-cover bg-bottom backdrop-brightness-50">
+    <div class="hero-section-content relative z-10 px-9  md:py-42 py-48 h-screen w-full bg-[url(../assets/header-bg.jpg)] bg-no-repeat bg-cover bg-bottom backdrop-brightness-50">
       <div class="hero-section-box-text text-center text-white">
         <div class="hero-section-text-title">
-          <h2 class="font-bold lg:text-5xl text-4xl">
+          <h2 class="font-bold lg:text-5xl md:text-4xl text-[35px] drop-shadow-md">
             Nikmati Hangatnya <br />
             Kebersamaan Kopi Merpati
           </h2>
@@ -85,7 +88,7 @@
         <div class="h-[2px] bg-brown w-40 mx-auto mt-5"></div>
       </div>
 
-      <div class="relative signature-content-container mt-16 lg:mt-0 flex lg:flex-row items-center">
+      <div class="relative signature-content-container mt-16 lg:mt-0 flex flex-col md:flex-row items-center">
         <div class="signature-content-col flex flex-col gap-y-10">
           <div class="signature-content flex gap-x-5 items-center">
             <div class="signature-content-text text-right max-w-xs">
@@ -184,20 +187,20 @@
         <div class="h-[2px] bg-brown w-40 mx-auto mt-5"></div>
       </div>
       <div class="gallery-container flex flex-col gap-y-2">
-        <div class="gallery-row flex gap-x-2 mt-20">
-          <img src="../assets/gallery/gallery-1.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-60 w-48 lg:h-80 h-62 object-cover" />
-          <img src="../assets/gallery/gallery-2.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-60 w-48 lg:h-80 h-62 object-cover" />
-          <img src="../assets/gallery/gallery-3.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-full w-72 lg:h-80 h-62 object-cover" />
+        <div class="gallery-row flex flex-col md:flex-row gap-2 mt-20">
+          <img src="../assets/gallery/gallery-1.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-60 md:w-48 w-full lg:h-80 h-62 object-cover" />
+          <img src="../assets/gallery/gallery-2.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-60 md:w-48 w-full lg:h-80 h-62 object-cover" />
+          <img src="../assets/gallery/gallery-3.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-full md:w-72 w-full lg:h-80 h-62 object-cover" />
         </div>
-        <div class="gallery-row flex gap-x-2">
-          <img src="../assets/gallery/gallery-4.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-60 w-48 lg:h-80 h-62 object-cover" />
-          <img src="../assets/gallery/gallery-5.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-full w-72 lg:h-80 h-62 object-cover" />
-          <img src="../assets/gallery/gallery-6.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-60 w-48 lg:h-80 h-62 object-cover" />
+        <div class="gallery-row flex flex-col md:flex-row gap-2">
+          <img src="../assets/gallery/gallery-4.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-60 md:w-48 w-full lg:h-80 h-62 object-cover" />
+          <img src="../assets/gallery/gallery-5.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-full md:w-72 w-full lg:h-80 h-62 object-cover" />
+          <img src="../assets/gallery/gallery-6.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-60 md:w-48 w-full lg:h-80 h-62 object-cover" />
         </div>
-        <div class="gallery-row flex gap-x-2">
-          <img src="../assets/gallery/gallery-7.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-full w-72 lg:h-80 h-62 object-cover" />
-          <img src="../assets/gallery/gallery-8.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-60 w-48 lg:h-80 h-62 object-cover" />
-          <img src="../assets/gallery/gallery-9.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-60 w-48 lg:h-80 h-62 object-cover" />
+        <div class="gallery-row flex flex-col md:flex-row gap-2">
+          <img src="../assets/gallery/gallery-7.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-full md:w-72 w-full lg:h-80 h-62 object-cover" />
+          <img src="../assets/gallery/gallery-8.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-60 md:w-48 w-full lg:h-80 h-62 object-cover" />
+          <img src="../assets/gallery/gallery-9.jpg" alt="" class="cursor-pointer transition-all duration-500 hover:scale-105 lg:w-60 md:w-48 w-full lg:h-80 h-62 object-cover" />
         </div>
       </div>
     </section>
@@ -218,13 +221,13 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Espresso Merpati</h3>
+                <h3 class="md:text-xl text-lg font-bold text-darkbrown">Espresso Merpati</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
               </div>
               <div class="menu-content-price">
-                <p class="text-darkbrown text-xl font-bold">Rp. 18.000</p>
+                <p class="text-darkbrown md:text-xl text-lg font-bold">Rp. 18.000</p>
               </div>
             </div>
             <div class="menu-content-row-bottom">
@@ -236,13 +239,13 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Cappuccino Classic</h3>
+                <h3 class="md:text-xl text-lg font-bold text-darkbrown">Cappuccino Classic</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
               </div>
               <div class="menu-content-price">
-                <p class="text-darkbrown text-xl font-bold">Rp. 25.000</p>
+                <p class="text-darkbrown md:text-xl text-lg font-bold">Rp. 25.000</p>
               </div>
             </div>
             <div class="menu-content-row-bottom">
@@ -254,13 +257,13 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Latte Caramel Delight</h3>
+                <h3 class="md:text-xl text-lg font-bold text-darkbrown">Latte Caramel Delight</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
               </div>
               <div class="menu-content-price">
-                <p class="text-darkbrown text-xl font-bold">Rp. 28.000</p>
+                <p class="text-darkbrown md:text-xl text-lg font-bold">Rp. 28.000</p>
               </div>
             </div>
             <div class="menu-content-row-bottom">
@@ -272,13 +275,13 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Velvet Cappuccino</h3>
+                <h3 class="md:text-xl text-lg font-bold text-darkbrown">Velvet Cappuccino</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
               </div>
               <div class="menu-content-price">
-                <p class="text-darkbrown text-xl font-bold">Rp. 23.000</p>
+                <p class="text-darkbrown md:text-xl text-lg font-bold">Rp. 23.000</p>
               </div>
             </div>
             <div class="menu-content-row-bottom">
@@ -290,13 +293,13 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Mocha Hazelnut Bliss</h3>
+                <h3 class="md:text-xl text-lg font-bold text-darkbrown">Mocha Hazelnut Bliss</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
               </div>
               <div class="menu-content-price">
-                <p class="text-darkbrown text-xl font-bold">Rp. 30.000</p>
+                <p class="text-darkbrown md:text-xl text-lg font-bold">Rp. 30.000</p>
               </div>
             </div>
             <div class="menu-content-row-bottom">
@@ -310,13 +313,13 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Vanilla Cold Brew</h3>
+                <h3 class="md:text-xl text-lg font-bold text-darkbrown">Vanilla Cold Brew</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
               </div>
               <div class="menu-content-price">
-                <p class="text-darkbrown text-xl font-bold">Rp. 27.000</p>
+                <p class="text-darkbrown md:text-xl text-lg font-bold">Rp. 27.000</p>
               </div>
             </div>
             <div class="menu-content-row-bottom">
@@ -328,13 +331,13 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Affogato Indulgence</h3>
+                <h3 class="md:text-xl text-lg font-bold text-darkbrown">Affogato Indulgence</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
               </div>
               <div class="menu-content-price">
-                <p class="text-darkbrown text-xl font-bold">Rp. 32.000</p>
+                <p class="text-darkbrown md:text-xl text-lg font-bold">Rp. 32.000</p>
               </div>
             </div>
             <div class="menu-content-row-bottom">
@@ -346,13 +349,13 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Kopi Susu Nusantara</h3>
+                <h3 class="md:text-xl text-lg font-bold text-darkbrown">Kopi Susu Nusantara</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
               </div>
               <div class="menu-content-price">
-                <p class="text-darkbrown text-xl font-bold">Rp. 22.000</p>
+                <p class="text-darkbrown md:text-xl text-lg font-bold">Rp. 22.000</p>
               </div>
             </div>
             <div class="menu-content-row-bottom">
@@ -364,13 +367,13 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Matcha Latte Fusion</h3>
+                <h3 class="md:text-xl text-lg font-bold text-darkbrown">Matcha Latte Fusion</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
               </div>
               <div class="menu-content-price">
-                <p class="text-darkbrown text-xl font-bold">Rp. 30.000</p>
+                <p class="text-darkbrown md:text-xl text-lg font-bold">Rp. 30.000</p>
               </div>
             </div>
             <div class="menu-content-row-bottom">
@@ -382,13 +385,13 @@
           <div class="menu-content-card gap-x-10">
             <div class="menu-content-row-top flex items-end justify-between">
               <div class="menu-content-title">
-                <h3 class="text-xl font-bold text-darkbrown">Choco Almond Frappe</h3>
+                <h3 class="md:text-xl text-lg font-bold text-darkbrown">Choco Almond Frappe</h3>
               </div>
               <div class="menu-content-line flex-grow">
                 <div class="relative bg-brown h-[2px]"></div>
               </div>
               <div class="menu-content-price">
-                <p class="text-darkbrown text-xl font-bold">Rp. 33.000</p>
+                <p class="text-darkbrown md:text-xl text-lg font-bold">Rp. 33.000</p>
               </div>
             </div>
             <div class="menu-content-row-bottom">
@@ -413,7 +416,7 @@
       </div>
 
       <div class="coffe-process-container flex flex-col lg:flex-row gap-x-2">
-        <div class="coffe-process-col flex lg:flex-col gap-4 mt-20 lg:max-w-sm max-w-full">
+        <div class="coffe-process-col flex flex-col md:flex-row lg:flex-col gap-4 mt-20 lg:max-w-sm max-w-full">
           <div class="relative coffe-process-card-text bg-brown rounded-md shadow-md py-6 px-5 flex flex-col gap-y-4 max-w-sm">
             <div class="number absolute bg-brown rounded-full w-20 h-20 p-2 border-8 border-white text-white font-bold text-4xl -top-12 left-2 flex justify-center items-center">1</div>
             <div class="h-[2px] bg-white w-36 mt-5"></div>
@@ -431,7 +434,7 @@
             <img src="../assets/coffe-process-1.jpg" alt="" class="cursor-pointer h-full object-cover rounded-md" />
           </div>
         </div>
-        <div class="coffe-process-col flex flex-row-reverse lg:flex-col-reverse gap-4 lg:mt-20 mt-6 lg:max-w-sm max-w-full">
+        <div class="coffe-process-col flex flex-col md:flex-row-reverse lg:flex-col-reverse gap-4 lg:mt-20 mt-6 lg:max-w-sm max-w-full">
           <div class="relative coffe-process-card-text bg-darkbrown rounded-md shadow-md py-6 px-6 flex flex-col gap-y-4 basis-[60%]">
             <div class="number absolute bg-darkbrown rounded-full w-20 h-20 p-2 border-8 border-white text-white font-bold text-4xl -top-12 left-2 flex justify-center items-center">2</div>
             <div class="h-[2px] bg-white w-36 mt-5"></div>
@@ -444,11 +447,11 @@
               </p>
             </div>
           </div>
-          <div class="img max-lg:max-w-xs">
-            <img src="../assets/coffe-process-2.jpg" alt="" class="cursor-pointer h-full object-cover rounded-md" />
+          <div class="img md:max-w-xs lg:max-w-full">
+            <img src="../assets/coffe-process-2.jpg" alt="" class="cursor-pointer h-full  object-cover rounded-md" />
           </div>
         </div>
-        <div class="coffe-process-col flex lg:flex-col gap-4 lg:mt-20 mt-6 lg:max-w-sm max-w-full">
+        <div class="coffe-process-col flex flex-col md:flex-row lg:flex-col gap-4 lg:mt-20 mt-6 lg:max-w-sm max-w-full">
           <div class="relative coffe-process-card-text bg-brown rounded-md shadow-md py-6 px-5 flex flex-col gap-y-4 max-w-sm">
             <div class="number absolute bg-brown rounded-full w-20 h-20 p-2 border-8 border-white text-white font-bold text-4xl -top-12 left-2 flex justify-center items-center">3</div>
             <div class="h-[2px] bg-white w-36 mt-5"></div>
@@ -482,7 +485,7 @@
       <div class="contact-container flex flex-col lg:flex-row gap-x-20">
         <div class="contact-col flex flex-col gap-4 mt-20 lg:max-w-xl max-w-full">
           <div class="contact-card-container flex gap-x-4 gap-y-3 flex-wrap">
-            <div class="contact-card border-2 border-brown rounded-md px-10 py-5 flex flex-col items-center justify-center gap-y-1 w-64">
+            <div class="contact-card border-2 border-brown rounded-md px-10 py-5 flex flex-col items-center justify-center gap-y-1 md:w-64 flex-1">
               <div class="contact-card-icon">
                 <i class="ph ph-phone text-darkbrown text-8xl font-bold"></i>
               </div>
@@ -504,7 +507,7 @@
                 <p class="text-white font-semibold">+621234566895</p>
               </div>
             </div>
-            <div class="contact-card bg-brown rounded-md px-10 py-5 flex flex-col items-center justify-center gap-y-1 w-64">
+            <div class="contact-card bg-brown rounded-md px-10 py-5 flex flex-col items-center justify-center gap-y-1 md:w-64 flex-1">
               <div class="contact-card-icon">
                 <i class="ph ph-envelope text-white text-8xl font-bold"></i>
               </div>
@@ -572,7 +575,7 @@
     <!-- Contact End -->
 
     <!-- Footer -->
-    <footer class="footer max-w-full lg:px-20 pt-12 pb-5 bg-darkbrown mt-28">
+    <!-- <footer class="footer max-w-full lg:px-20 pt-12 pb-5 bg-darkbrown mt-28">
       <div class="footer-top-content w-full flex justify-between py-12">
         <div class="footer-top-content-text">
           <h2 class="text-gray-100 font-semibold text-2xl">
@@ -655,7 +658,7 @@
           </ul>
         </div>
       </div>  
-    </footer>
+    </footer> -->
     <!-- Footer End -->
 
     <!-- Icons -->
