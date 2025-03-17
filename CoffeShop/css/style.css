@@ -2895,6 +2895,11 @@
       width: calc(var(--spacing) * 60);
     }
   }
+  .lg\:w-64 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 64);
+    }
+  }
   .lg\:w-\[400px\] {
     @media (width >= 64rem) {
       width: 400px;
