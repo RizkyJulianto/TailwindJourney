@@ -7,7 +7,7 @@ TailwindJourney is a collection of website projects designed using Tailwind CSS 
 
  - Weserve : Hosting provider website
  - CoffeShop : Landing page for coffeshop named Kopi Merpati
- - DigitalAgency : Landing page for Agency
+ - DigitalAgency : Landing page for Agency (Design from Figma Community @Fauzan Ardhiyansyah -> https://www.figma.com/design/GaG3xaHwJDxqvvphtc2hdw/Digital-Agency-Website---Freebie--Community-?node-id=3-1327&p=f&t=cOeRBRKj0tIAtTkI-0)
    
  
 
@@ -35,7 +35,11 @@ TailwindJourney is a collection of website projects designed using Tailwind CSS 
 ```bash
 cd TailwindJourney/Weserve
 ```
-3. Open the index.html file in your browser or use the Live Server extension in Visual Studio Code.
+3. Install the dependencies:
+```bash
+npm install
+```
+4. Open the index.html file in your browser or use the Live Server extension in Visual Studio Code.
 
 
 ## Important Notice ‼️
