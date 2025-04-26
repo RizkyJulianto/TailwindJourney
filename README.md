@@ -7,7 +7,7 @@ TailwindJourney is a collection of website projects designed using Tailwind CSS 
 
  - Weserve : Hosting provider website
  - CoffeShop : Landing page for coffeshop named Kopi Merpati
- - DigitalAgency : Landing page for Agency (Design from Figma Community @Fauzan Ardhiyansyah -> https://www.figma.com/design/GaG3xaHwJDxqvvphtc2hdw/Digital-Agency-Website---Freebie--Community-?node-id=3-1327&p=f&t=cOeRBRKj0tIAtTkI-0)
+ - DigitalAgency : Landing page for Agency (Design from Figma Community @Fauzan Ardhiyansyah -> https://www.figma.com/community/file/1058842196634115002)
    
  
 
