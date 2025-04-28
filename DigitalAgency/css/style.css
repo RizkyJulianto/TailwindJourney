@@ -8,9 +8,12 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-teal-900: oklch(38.6% 0.063 188.416);
+    --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-black: #1E1E20;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -29,6 +32,7 @@
     --default-mono-font-family: var(--font-mono);
     --color-primary: #19191B;
     --color-secondary: #5454D4;
+    --color-red: #F04037;
     --color-yellow: #FEDC5A;
     --font-primary: "Poppins";
   }
@@ -254,8 +258,29 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
+  .bottom-3 {
+    bottom: calc(var(--spacing) * 3);
+  }
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
+  }
+  .bottom-20 {
+    bottom: calc(var(--spacing) * 20);
+  }
+  .bottom-30 {
+    bottom: calc(var(--spacing) * 30);
+  }
+  .bottom-32 {
+    bottom: calc(var(--spacing) * 32);
+  }
+  .bottom-36 {
+    bottom: calc(var(--spacing) * 36);
+  }
+  .bottom-40 {
+    bottom: calc(var(--spacing) * 40);
+  }
+  .bottom-50 {
+    bottom: calc(var(--spacing) * 50);
   }
   .-left-0 {
     left: calc(var(--spacing) * -0);
@@ -338,6 +363,9 @@
   .h-\[467px\] {
     height: 467px;
   }
+  .h-\[506px\] {
+    height: 506px;
+  }
   .h-\[800px\] {
     height: 800px;
   }
@@ -380,6 +408,9 @@
   .w-\[1700px\] {
     width: 1700px;
   }
+  .w-auto {
+    width: auto;
+  }
   .w-fit {
     width: fit-content;
   }
@@ -392,6 +423,15 @@
   .max-w-full {
     max-width: 100%;
   }
+  .flex-1 {
+    flex: 1;
+  }
+  .basis-1 {
+    flex-basis: calc(var(--spacing) * 1);
+  }
+  .basis-1\/2 {
+    flex-basis: calc(1/2 * 100%);
+  }
   .basis-\[40\%\] {
     flex-basis: 40%;
   }
@@ -400,6 +440,9 @@
   }
   .basis-\[70\%\] {
     flex-basis: 70%;
+  }
+  .basis-\[80\%\] {
+    flex-basis: 80%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -440,11 +483,20 @@
   .items-center {
     align-items: center;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
   }
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
@@ -454,6 +506,12 @@
   }
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
+  }
+  .gap-x-5 {
+    column-gap: calc(var(--spacing) * 5);
+  }
+  .gap-x-7 {
+    column-gap: calc(var(--spacing) * 7);
   }
   .gap-y-3 {
     row-gap: calc(var(--spacing) * 3);
@@ -486,11 +544,26 @@
   .border-white {
     border-color: var(--color-white);
   }
+  .bg-\[\#121213\] {
+    background-color: #121213;
+  }
+  .bg-\[\#121213\]\/50 {
+    background-color: color-mix(in oklab, #121213 50%, transparent);
+  }
+  .bg-\[121213\] {
+    background-color: 121213;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-blue-200 {
+    background-color: var(--color-blue-200);
+  }
   .bg-primary {
     background-color: var(--color-primary);
+  }
+  .bg-red {
+    background-color: var(--color-red);
   }
   .bg-secondary {
     background-color: var(--color-secondary);
@@ -545,14 +618,23 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
   .py-22 {
     padding-block: calc(var(--spacing) * 22);
+  }
+  .pt-22 {
+    padding-top: calc(var(--spacing) * 22);
   }
   .text-center {
     text-align: center;
@@ -571,6 +653,10 @@
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
@@ -607,6 +693,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .opacity-50 {
+    opacity: 50%;
   }
   .opacity-70 {
     opacity: 70%;
