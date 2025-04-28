@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primary: #19191B;
+    --color-secondary: #5454D4;
+    --color-red: #F04037;
+    --color-yellow: #FEDC5A;
+    --font-primary: "Poppins";
+    --font-secondary: "Nunito Sans";
+}

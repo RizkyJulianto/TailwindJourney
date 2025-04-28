@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <!-- Font Secondary -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+    <title>Digital Agency</title>
+  </head>
+  <body class="bg-primary">
+    <!-- Header -->
+    <header class="header py-8 px-30">
+      <nav class="flex justify-between py-4 max-w-full mx-auto items-center">
+        <div class="nav-logo flex gap-x-3 items-center">
+          <img src="../assets/Logo.png" alt="" />
+          <h3 class="font-primary font-bold text-[28px] text-white">Enver</h3>
+        </div>
+        <div class="nav-links">
+          <ul class="flex gap-x-4 text-white opacity-70 text-lg">
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Our Project</a></li>
+            <li><a href="">About us</a></li>
+          </ul>
+        </div>
+        <div class="nav-button border border-white rounded-[5px]">
+          <a href="" class="text-white py-2 px-7 inline-block">Contact us</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero section -->
+    <section class="hero-section max-w-full px-30 py-22">
+      <div class="hero-content w-full flex justify-between items-center relative">
+        <!-- Circle overlay -->
+        <div class="absolute circle-overlay bg-linear-to-b from-secondary to-transparent blur-[200px] -rotate-45 w-[467px] h-[1000.79px] rounded-full opacity-[35%]"></div>
+        <div class="absolute circle-overlay bg-linear-to-b from-yellow to-transparent blur-[200px] -right-5 -bottom-30 rotate-45 w-[467px] h-[467px] rounded-full opacity-[27%]"></div>
+        <div class="left-col basis-[50%] flex gap-y-10 flex-col">
+          <div class="title">
+            <h1 class="text-white font-bold text-6xl leading-16">
+              Build Your <br />
+              Awesome Platform
+            </h1>
+          </div>
+          <div class="description">
+            <p class="text-white opacity-70 text-[21px]">Enver studio is a digital studio that offers several services such as UI/UX Design to developers, we will provide the best service for those of you who use our services.</p>
+          </div>
+          <div class="button flex gap-x-2 items-center bg-secondary w-fit py-4 px-7">
+            <a href="" class="text-white font-semibold text-xl">Our Services</a>
+            <div class="icon">
+              <img src="../assets/icons/arrow-right-up.png" alt="" class="w-[24px] h-[24px]" />
+            </div>
+          </div>
+        </div>
+        <div class="right-col basis-[40%] relative">
+          <img src="../assets/hero-img.png" alt="" class="w-[800px] h-[800px] object-contain absolute -bottom-[335px]" />
+
+          <!-- Absolute rectangle -->
+          <div class="absolute rectangle border border-white w-[250px] h-[250px] rounded-[22px] rotate-[22deg] right-30 -bottom-20 -z-10"></div>
+        </div>
+
+        <!-- Icons Absolute -->
+        <div class="absolute circle right-0 -top-20">
+          <img src="../assets/icons/circle.png" alt="" />
+        </div>
+        <div class="absolute grafik right-[450px] -top-10">
+          <img src="../assets/icons/grafik.png" alt="" />
+        </div>
+        <div class="absolute plus right-0 bottom-10">
+          <img src="../assets/icons/plus.png" alt="" />
+        </div>
+        <div class="absolute triangle right-[420px] -bottom-10">
+          <img src="../assets/icons/triangle.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Hero section End-->
+
+    <!-- Beschoice Section -->
+    <section class="bestchoice max-w-full px-30 py-22 relative">
+      <div class="absolute circle-overlay bg-linear-to-b from-secondary to-transparent blur-[200px] -z-10 top-40 -rotate-45 w-[467px] h-[1000.79px] rounded-full opacity-[35%]"></div>
+      <div class="absolute circle-overlay bg-linear-to-b from-yellow to-transparent blur-[200px] -z-10 right-40 -bottom-30 rotate-45 w-[400px] h-[400px] rounded-full opacity-[27%]"></div>
+      <div class="beschoice-header flex justify between w-full">
+        <div class="title basis-[70%]">
+          <h2 class="text-white font-bold text-5xl leading-20">
+            Why Enver Is The <br />
+            Best Choice?
+          </h2>
+        </div>
+        <div class="description p-4">
+          <p class="text-white opacity-70 text-xl">Watch this one minute video so you understand why you should use our services!</p>
+        </div>
+      </div>
+
+      <div class="video max-w-full mt-12">
+        <img src="../assets/video-bestchoice.png" alt="" />
+      </div>
+    </section>
+    <!-- Beschoice Section End -->
+
+    <!-- Service Section -->
+     <section class="service max-w-full py-22 px-30 relative ">
+      <!-- Gradient Overlay -->
+      <div class="absolute circle-overlay bg-linear-to-b from-yellow blur-[300px] to-transparent  right-20 bottom-10 -rotate-20 w-[1200px] h-[467px] rounded-md opacity-[27%]"></div>
+      <div class="title">
+        <h2 class="text-white font-bold text-5xl leading-20 text-center">
+          The Service We Provide <br />
+          For You
+        </h2>
+
+        <!-- Patern Icon -->
+        <div class="absolute triangle top-20 left-50 ">
+          <img src="../assets/icons/triangle.png" alt="" />
+        </div>
+        <div class="absolute plus right-40 top-50 rotate-120">
+          <img src="../assets/icons/plus.png" alt="" />
+        </div>
+        <div class="absolute plus left-30 -bottom-10 rotate-120">
+          <img src="../assets/icons/plus.png" alt="" />
+        </div>
+      </div>
+
+      <div class="container-card-content flex flex-col gap-y-30 mt-20">
+        <div class="container-card-service-top flex w-full justify-between">
+          <div class="card-service flex flex-col items-center gap-y-3">
+            <div class="icon">
+              <img src="../assets/icons/development.png" alt="" class="w-[50px] h-[50px]">
+            </div>
+            <div class="title-card">
+              <h3 class="font-semibold text-white text-2xl">Development</h3>
+            </div>
+            <div class="description-card">
+              <p class="text-white opacity-70 text-lg text-center max-w-[300px]">Create a platform with the best and coolest quality from us.</p>
+            </div>
+          </div>
+          <div class="card-service flex flex-col items-center gap-y-3">
+            <div class="icon">
+              <img src="../assets/icons/uiux.png" alt="" class="w-[50px] h-[50px]">
+            </div>
+            <div class="title-card">
+              <h3 class="font-semibold text-white text-2xl">UI/UX Designer</h3>
+            </div>
+            <div class="description-card">
+              <p class="text-white opacity-70 text-lg text-center max-w-[300px]">We provide UI/UX Design services, and of course with the best quality</p>
+            </div>
+          </div>
+          <div class="card-service flex flex-col items-center gap-y-3">
+            <div class="icon">
+              <img src="../assets/icons/design.png" alt="" class="w-[50px] h-[50px]">
+            </div>
+            <div class="title-card">
+              <h3 class="font-semibold text-white text-2xl">Graphik Designer</h3>
+            </div>
+            <div class="description-card">
+              <p class="text-white opacity-70 text-lg text-center max-w-[300px]">We provide Graphic Design services, with the best designers</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-card-service-bottom flex w-full justify-between">
+          <div class="card-service flex flex-col items-center gap-y-3">
+            <div class="icon">
+              <img src="../assets/icons/motion.png" alt="" class="w-[50px] h-[50px]">
+            </div>
+            <div class="title-card">
+              <h3 class="font-semibold text-white text-2xl">Motion Graphik</h3>
+            </div>
+            <div class="description-card">
+              <p class="text-white opacity-70 text-lg text-center max-w-[300px]">Create a platform with the best and coolest quality from us.</p>
+            </div>
+          </div>
+          <div class="card-service flex flex-col items-center gap-y-3">
+            <div class="icon">
+              <img src="../assets/icons/photography.png" alt="" class="w-[50px] h-[50px]">
+            </div>
+            <div class="title-card">
+              <h3 class="font-semibold text-white text-2xl">Photography</h3>
+            </div>
+            <div class="description-card">
+              <p class="text-white opacity-70 text-lg text-center max-w-[300px]">We provide Photography services, and of course with the best quality</p>
+            </div>
+          </div>
+          <div class="card-service flex flex-col items-center gap-y-3">
+            <div class="icon">
+              <img src="../assets/icons/videography.png" alt="" class="w-[50px] h-[50px]">
+            </div>
+            <div class="title-card">
+              <h3 class="font-semibold text-white text-2xl">Videography</h3>
+            </div>
+            <div class="description-card">
+              <p class="text-white opacity-70 text-lg text-center max-w-[300px]">Create a platform with the best and coolest quality from us.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+     </section>
+    <!-- Service Section End -->
+  </body>
+</html>
